@@ -7,10 +7,10 @@ const counter = {
   btnDecrement: document.querySelector('button[data-action="decrement"]'),
   btnIncrement: document.querySelector('button[data-action="increment"]'),
 
-  decrement() {
+  onClickBtnDecrement() {
     this.counterValue -= 1;
   },
-  increment() {
+  onClickBtnIncrement() {
     this.counterValue += 1;
   },
   updateValueUI() {
@@ -18,13 +18,13 @@ const counter = {
   },
   addDecrementListener() {
     this.btnDecrement.addEventListener('click', () => {
-      counter.decrement();
+      counter.onClickBtnDecrement();
       counter.updateValueUI();
     });
   },
   addIncrementListener() {
     this.btnIncrement.addEventListener('click', () => {
-      counter.increment();
+      counter.onClickBtnIncrement();
       counter.updateValueUI();
     });
   },
