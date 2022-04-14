@@ -58,3 +58,11 @@ button {
 
   transition: transform 250ms ease;
 }
+
+/* task 04 чтобы кнопки не дергались  */
+
+span#value {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+}
