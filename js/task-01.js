@@ -5,9 +5,8 @@ const categories = [...document.querySelector('#categories').children].map(categ
   };
 });
 
-console.log(`Number of categories: `, categories.length);
-
-categories.forEach(({ category, elements }) => {
+categories.forEach(({ category, elements }, i, categories) => {
+  console.log('Number of categories: ', categories.length);
   console.log('Category: ', category);
   console.log('Elements: ', elements.length);
 });
